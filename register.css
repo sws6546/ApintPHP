@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --background: #FFF;
+    --text: #42E2B8;
+    --elements: #07004D;
+    --accent: #2D82B7;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--elements);
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form, .block{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.tInput{
+    padding: 10px 35px;
+    border: 5px solid var(--text);
+    border-radius: 30px;
+    font-size: large;
+}
+.signupBtn, input[type="submit"]{
+    background: var(--accent);
+    padding: 5px;
+    border: 5px solid var(--text);
+    border-radius: 20px;
+    color: var(--background);
+    transition-duration: 0.4s;
+    font-size: large;
+}
+.signupBtn:hover, input[type="submit"]:hover{
+    color: var(--background);
+    border: 5px solid var(--accent);
+    background: var(--elements);
+    cursor: pointer;
+}

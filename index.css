@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --background: #FFF;
+    --text: #42E2B8;
+    --elements: #07004D;
+    --accent: #2D82B7;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--background);
+    font-family: 'Lato', sans-serif;
+}
+header{
+    background-color: var(--elements);
+    padding: 25px;
+    color: var(--text);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#btns{
+    display: flex;
+    gap: 20px;
+}
+.loginBtn{
+    background: var(--background);
+    padding: 5px;
+    border: 5px solid var(--accent);
+    border-radius: 15px;
+    color: var(--elements);
+    transition-duration: 0.4s;
+}
+.loginBtn:hover{
+    color: var(--background);
+    border: 5px solid var(--accent);
+    background: var(--elements);
+    cursor: pointer;
+}
+.signupBtn{
+    background: var(--accent);
+    padding: 5px;
+    border: 5px solid var(--text);
+    border-radius: 15px;
+    color: var(--background);
+    transition-duration: 0.4s;
+}
+.signupBtn:hover{
+    color: var(--background);
+    border: 5px solid var(--accent);
+    background: var(--elements);
+    cursor: pointer;
+}
+#first{
+    background-color: var(--accent);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+}
+#first .container{
+    color: var(--text);
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    padding: 20px;
+}
+/*#first *{*/
+/*    border: 2px solid red;*/
+/*}*/
+.text{
+    font-size: 30px;
+    padding: 20px;
+    width: 60vw;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form{
+    padding: 30px;
+    background-color: var(--background);
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+form input[type='text'], form input[type='password']{
+    border: 5px solid var(--text);
+    /*height: 30px;*/
+    /*width: 200px;*/
+    border-radius: 30px;
+    padding: 15px 20px;
+    color: var(--elements);
+    font-size: large;
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --background: #FFF;
+    --text: #42E2B8;
+    --elements: #07004D;
+    --accent: #2D82B7;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*body *{*/
+/*    border: 2px solid red;*/
+/*}*/
+body{
+    background-color: var(--elements);
+    font-family: 'Lato', sans-serif;
+    color: var(--text);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    gap: 30px;
+    overflow-x: hidden;
+}
+section{
+    width: 80vw;
+}
+#first{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+img{
+    width: 400px;
+    height: 400px;
+}
+#offerts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.offert{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: start;
+    background-color: var(--accent);
+    padding: 30px;
+    border-radius: 30px;
+}
+.postData{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#addPost{
+    padding: 10px;
+    background-color: var(--text);
+    color: var(--elements);
+    border-radius: 10px;
+    border: 5px solid var(--accent);
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+#addPost:hover{
+    background-color: var(--elements);
+    color: var(--text);
+    border: 5px solid var(--accent);
+}
+header{
+    width: 100vw;
+    font-size: 20px;
+    background-color: var(--accent);
+    color: var(--elements);
+    position: fixed;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
